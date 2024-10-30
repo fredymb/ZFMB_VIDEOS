@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_FMB_VIDEO'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_FMB_VIDEO'
+  }
+}
+define service ZUI_FMB_VIDEO_O4 provider contracts odata_v4_ui {
+  expose ZC_FMB_VIDEO;
+}
