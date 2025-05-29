@@ -19,7 +19,9 @@ annotate view ZC_FMB_VIDEO with
   @UI.lineItem: [ {
     position: 10 ,
     label: 'UUID'
-  } ]
+  },
+  { type: #FOR_ACTION,  dataAction: 'PopUpConfirm' , label: 'PopUp Confirm' , position: 10 }
+   ]
   @UI.selectionField: [ {
     position: 10
   } ]

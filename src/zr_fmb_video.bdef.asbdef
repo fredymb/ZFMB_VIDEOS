@@ -25,6 +25,8 @@ authorization master( global )
   update;
   delete;
 
+  static action PopUpConfirm ;
+
   draft action Activate optimized;
   draft action Discard;
   draft action Edit;
