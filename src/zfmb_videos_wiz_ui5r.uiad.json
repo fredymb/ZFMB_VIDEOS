@@ -1,0 +1,34 @@
+{
+  "formatVersion": "2",
+  "header": {
+    "description": "",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD",
+    "targetMappingTitle": "Videos Wizard"
+  },
+  "ui5AppDetails": {
+    "appId": "videoswizard"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_D1ED6CA9EB271A17C4DAFDE13A6E821E5216AB3B_TM",
+    "semanticObject": "VideosWizard",
+    "action": "Display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_D1ED6CA9EB271A17C4DAFDE13A6E821E5216AB3B_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Videos Wizard"
+      }
+    }
+  ]
+}

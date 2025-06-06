@@ -22,8 +22,11 @@ CLASS zcl_fmb_video_virtual_elements IMPLEMENTATION.
 
     LOOP AT videos ASSIGNING FIELD-SYMBOL(<videos>).
 
-      DATA(video_id) = segment( val = <videos>-url index = 4 sep = '/'  ).
-      <videos>-Thumbnail = 'https://img.youtube.com/vi/' && video_id && '/hqdefault.jpg'.
+      TRY.
+          DATA(video_id) = segment( val = <videos>-url index = 4 sep = '/'  ).
+          <videos>-Thumbnail = 'https://img.youtube.com/vi/' && video_id && '/hqdefault.jpg'.
+        CATCH cx_root.
+      ENDTRY.
 
     ENDLOOP.
 

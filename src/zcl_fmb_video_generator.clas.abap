@@ -19,11 +19,13 @@ CLASS zcl_fmb_video_generator IMPLEMENTATION.
 
     DATA itab TYPE TABLE OF zfmb_video.
 
+
     GET TIME STAMP FIELD DATA(tsl).
 
+    DATA(lv_video_uuid) = cl_system_uuid=>create_uuid_x16_static( ).
 
     itab = VALUE #(
-                  (  video_uuid = cl_system_uuid=>create_uuid_x16_static( )
+                  (  video_uuid = lv_video_uuid
                      title = 'Let''s code ABAP | RESTful Application Programming Model (RAP) | CDS | Virtual Elements'
                      url = 'https://youtu.be/BEbztssJlg8'
                      description = 'In this video we build a SAP YouTube Tutorials App with ABAP and the ABAP RESTful Application Programming Model (RAP). You learn how to insert data into a table through an executable ABAP class and how to create a' &&
@@ -37,6 +39,10 @@ CLASS zcl_fmb_video_generator IMPLEMENTATION.
     INSERT zfmb_video FROM TABLE @itab.
 
     out->write( | { sy-dbcnt } entries inserted successfully!| ).
+
+*    CALL FUNCTION 'ZFMB_ASSIGN_URL'
+*      EXPORTING
+*        iv_videouuid = lv_video_uuid.
 
   ENDMETHOD.
 ENDCLASS.

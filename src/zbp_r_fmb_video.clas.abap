@@ -1,15 +1,30 @@
-class ZBP_R_FMB_VIDEO definition
-  public
-  abstract
-  final
-  for behavior of ZR_FMB_VIDEO .
+CLASS zbp_r_fmb_video DEFINITION
+  PUBLIC
+  ABSTRACT
+  FINAL
+  FOR BEHAVIOR OF zr_fmb_video .
 
-public section.
-protected section.
-private section.
+  PUBLIC SECTION.
+
+    TYPES  video_events TYPE TABLE FOR EVENT zr_fmb_video~AssignUrlFinished.
+    CLASS-METHODS raise_assign_url_finished
+      IMPORTING video_events TYPE  video_events.
+
+    CLASS-DATA gv_videouuid TYPE sysuuid_x16.
+
+  PROTECTED SECTION.
+  PRIVATE SECTION.
 ENDCLASS.
 
 
 
-CLASS ZBP_R_FMB_VIDEO IMPLEMENTATION.
+CLASS zbp_r_fmb_video IMPLEMENTATION.
+
+  METHOD raise_assign_url_finished.
+
+    lcl_event_handler=>on_assign_url_finished( video_events = video_events ).
+
+
+  ENDMETHOD.
+
 ENDCLASS.
