@@ -2,12 +2,13 @@
 @Metadata.allowExtensions: true
 @EndUserText.label: '###GENERATED Core Data Service Entity'
 define root view entity ZR_FMB_VIDEO
-  as select from ZFMB_VIDEO
+  as select from zfmb_video
 {
   key video_uuid as VideoUuid,
   title as Title,
   url as Url,
   description as Description,
+  active as Active,
   @Semantics.user.createdBy: true
   local_created_by as LocalCreatedBy,
   @Semantics.systemDateTime.createdAt: true

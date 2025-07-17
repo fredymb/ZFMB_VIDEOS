@@ -48,6 +48,7 @@ authorization master ( global )
       Title              = title;
       Url                = url;
       Description        = description;
+      Active             = active;
       LocalCreatedBy     = local_created_by;
       LocalCreatedAt     = local_created_at;
       LocalLastChangedBy = local_last_changed_by;

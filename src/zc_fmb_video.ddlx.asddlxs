@@ -46,7 +46,7 @@ annotate view ZC_FMB_VIDEO with
   } ]
   @UI.selectionField: [ {
     position: 20
-  } ]
+  } ]  
   Title;
 
   @EndUserText.label: 'Url'
@@ -74,6 +74,19 @@ annotate view ZC_FMB_VIDEO with
     position: 40
   } ]
   Description;
+  
+  @EndUserText.label: 'Active'
+  @UI.identification: [ {
+    position: 50
+  } ]
+  @UI.lineItem: [ {
+    position: 50
+  } ]
+  @UI.selectionField: [ {
+    position: 50
+  } ]
+  @Consumption.filter.defaultValue: 'X'
+  Active;
 
   @UI.identification: [ {
     position: 50 ,

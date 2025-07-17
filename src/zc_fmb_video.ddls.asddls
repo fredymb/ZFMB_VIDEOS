@@ -13,6 +13,7 @@ define root view entity ZC_FMB_VIDEO
           Title,
           Url,
           Description,
+          Active,
           LocalCreatedBy,
           LocalCreatedAt,
           LocalLastChangedBy,

@@ -30,6 +30,7 @@ CLASS zcl_fmb_video_generator IMPLEMENTATION.
                      url = 'https://youtu.be/BEbztssJlg8'
                      description = 'In this video we build a SAP YouTube Tutorials App with ABAP and the ABAP RESTful Application Programming Model (RAP). You learn how to insert data into a table through an executable ABAP class and how to create a' &&
                                    'll required artifacts to build a Business Service. We customize the UI with metadata extensions and we extend the projection view with a Virtual Element to display thumbnails.'
+                     active = abap_true
                      local_created_by = sy-uname
                      local_created_at = tsl )
 

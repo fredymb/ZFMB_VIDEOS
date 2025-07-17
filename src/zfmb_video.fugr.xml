@@ -11,19 +11,6 @@
     <item>
      <FUNCNAME>ZFMB_ASSIGN_URL</FUNCNAME>
      <SHORT_TEXT>Assign URL</SHORT_TEXT>
-     <IMPORT>
-      <RSIMP>
-       <PARAMETER>IV_VIDEOUUID</PARAMETER>
-       <REFERENCE>X</REFERENCE>
-       <TYP>SYSUUID_X16</TYP>
-      </RSIMP>
-     </IMPORT>
-     <DOCUMENTATION>
-      <RSFDO>
-       <PARAMETER>IV_VIDEOUUID</PARAMETER>
-       <KIND>P</KIND>
-      </RSFDO>
-     </DOCUMENTATION>
     </item>
    </FUNCTIONS>
   </asx:values>
