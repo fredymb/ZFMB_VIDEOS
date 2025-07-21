@@ -2,6 +2,8 @@
 @UI.headerInfo.title.type: #STANDARD
 @UI.headerInfo.imageUrl: 'Thumbnail'
 @UI.headerInfo.title.value: 'Title'
+@UI.presentationVariant: [{ qualifier: 'DefaultVariant', sortOrder: [{ by: 'LocalCreatedAt', direction: #ASC }], groupBy: [ 'Active' ], visualizations: [{ type: #AS_LINEITEM }] }]
+@UI.selectionPresentationVariant: [ { presentationVariantQualifier: 'DefaultVariant' } ]
 annotate view ZC_FMB_VIDEO with
 {
   @EndUserText.label: 'VideoUuid'
