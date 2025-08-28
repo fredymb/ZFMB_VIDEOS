@@ -18,7 +18,8 @@ ENDCLASS.
 
 
 
-CLASS zbp_r_fmb_video IMPLEMENTATION.
+CLASS ZBP_R_FMB_VIDEO IMPLEMENTATION.
+
 
   METHOD raise_assign_url_finished.
 
@@ -26,5 +27,4 @@ CLASS zbp_r_fmb_video IMPLEMENTATION.
 
 
   ENDMETHOD.
-
 ENDCLASS.

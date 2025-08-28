@@ -1,6 +1,6 @@
 projection implementation in class ZBP_C_FMB_VIDEO unique;
 strict ( 2 );
-use draft;
+use  collaborative draft;
 define behavior for ZC_FMB_VIDEO alias ZcFmbVideo
 use etag
 
@@ -16,6 +16,7 @@ use etag
   use action Discard;
   use action Resume;
   use action Prepare;
+  use action Share;
   use action PopUpConfirm;
   use action AssignUrl;
   use action AssignUrlFinish;

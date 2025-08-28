@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_fmb_video_generator IMPLEMENTATION.
+CLASS ZCL_FMB_VIDEO_GENERATOR IMPLEMENTATION.
 
 
   METHOD if_oo_adt_classrun~main.

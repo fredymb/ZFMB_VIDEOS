@@ -24,7 +24,12 @@ ENDCLASS.
 
 
 
-CLASS zcl_fmb_bgpf_assign_ulr IMPLEMENTATION.
+CLASS ZCL_FMB_BGPF_ASSIGN_ULR IMPLEMENTATION.
+
+
+  METHOD constructor.
+    mv_videouuid = iv_videouuid.
+  ENDMETHOD.
 
 
   METHOD if_bgmc_op_single~execute.
@@ -35,9 +40,6 @@ CLASS zcl_fmb_bgpf_assign_ulr IMPLEMENTATION.
 
   ENDMETHOD.
 
-  METHOD constructor.
-    mv_videouuid = iv_videouuid.
-  ENDMETHOD.
 
   METHOD save.
 
@@ -46,5 +48,4 @@ CLASS zcl_fmb_bgpf_assign_ulr IMPLEMENTATION.
         iv_videouuid = mv_videouuid.
 
   ENDMETHOD.
-
 ENDCLASS.

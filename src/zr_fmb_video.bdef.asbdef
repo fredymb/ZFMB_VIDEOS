@@ -1,10 +1,10 @@
 managed implementation in class ZBP_R_FMB_VIDEO unique;
 strict ( 2 );
-with draft;
+with collaborative draft;
 define behavior for ZR_FMB_VIDEO alias ZrFmbVideo
 with additional save
 persistent table zfmb_video
-draft table zfmb_video_d
+draft table zfmb_video_d query zr_fmb_video_d
 etag master LocalLastChangedAt
 lock master total etag LastChangedAt
 authorization master ( global )
@@ -35,6 +35,7 @@ authorization master ( global )
   draft action Discard;
   draft action Edit;
   draft action Resume;
+  draft action Share;
   draft determine action Prepare;
 
   side effects

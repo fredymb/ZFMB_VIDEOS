@@ -12,7 +12,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_fmb_video_virtual_elements IMPLEMENTATION.
+CLASS ZCL_FMB_VIDEO_VIRTUAL_ELEMENTS IMPLEMENTATION.
 
 
   METHOD if_sadl_exit_calc_element_read~calculate.
