@@ -71,11 +71,15 @@ CLASS lhc_zr_fmb_video DEFINITION INHERITING FROM cl_abap_behavior_handler.
       AssignUrl FOR MODIFY
         IMPORTING keys FOR ACTION ZrFmbVideo~AssignUrl,
       AssignUrlFinish FOR MODIFY
-        IMPORTING keys FOR ACTION ZrFmbVideo~AssignUrlFinish.
+        IMPORTING keys FOR ACTION ZrFmbVideo~AssignUrlFinish,
+      GetRecommendedValuesFunction FOR READ
+        IMPORTING keys FOR FUNCTION ZrFmbVideo~GetRecommendedValuesFunction RESULT result.
 ENDCLASS.
 
 CLASS lhc_zr_fmb_video IMPLEMENTATION.
   METHOD get_global_authorizations.
+
+    result-%create = if_abap_behv=>auth-allowed.
   ENDMETHOD.
   METHOD PopUpConfirm.
 
@@ -139,6 +143,14 @@ CLASS lhc_zr_fmb_video IMPLEMENTATION.
   METHOD AssignUrlFinish.
     RAISE ENTITY EVENT zr_fmb_video~AssignUrlFinished
        FROM VALUE #( ( %key   = keys[ 1 ]-%key ) ).
+  ENDMETHOD.
+
+  METHOD GetRecommendedValuesFunction.
+
+    result = VALUE #( ( %tky = keys[ 1 ]-%tky
+                       %param = VALUE #( zrfmbvideo = VALUE #( description = VALUE #( ( score = 1 suggested = abap_true value = |Option 1 | ) ) ) ) ) ).
+
+
   ENDMETHOD.
 
 ENDCLASS.

@@ -1,8 +1,6 @@
 class ZBP_C_FMB_VIDEO definition
   public
-  abstract
-  final
-  for behavior of ZC_FMB_VIDEO .
+  create private .
 
 public section.
 protected section.

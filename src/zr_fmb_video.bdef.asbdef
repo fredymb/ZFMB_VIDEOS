@@ -21,6 +21,8 @@ authorization master ( global )
   field ( numbering : managed )
   VideoUuid;
 
+  field ( recommendations ) Description;
+  recommendation function GetRecommendedValuesFunction;
 
   create;
   update;
@@ -40,8 +42,10 @@ authorization master ( global )
 
   side effects
   {
-    event AssignUrlFinished affects field (Url) ;
+    recommendation function GetRecommendedValuesFunction executed on field Title, field Description;
+    event AssignUrlFinished affects field ( Url );
   }
+
 
   mapping for zfmb_video
     {

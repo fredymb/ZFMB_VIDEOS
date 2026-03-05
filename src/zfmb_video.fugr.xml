@@ -4,7 +4,6 @@
   <asx:values>
    <AREAT>Video Functions</AREAT>
    <INCLUDES>
-    <SOBJ_NAME>LZFMB_VIDEOTOP</SOBJ_NAME>
     <SOBJ_NAME>SAPLZFMB_VIDEO</SOBJ_NAME>
    </INCLUDES>
    <FUNCTIONS>

@@ -1,6 +1,9 @@
 projection implementation in class ZBP_C_FMB_VIDEO unique;
 strict ( 2 );
-use  collaborative draft;
+use collaborative draft;
+use side effects;
+use recommendations;
+
 define behavior for ZC_FMB_VIDEO alias ZcFmbVideo
 use etag
 
