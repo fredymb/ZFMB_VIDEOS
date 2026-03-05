@@ -148,7 +148,7 @@ CLASS lhc_zr_fmb_video IMPLEMENTATION.
   METHOD GetRecommendedValuesFunction.
 
     result = VALUE #( ( %tky = keys[ 1 ]-%tky
-                       %param = VALUE #( zrfmbvideo = VALUE #( description = VALUE #( ( score = 1 suggested = abap_true value = |Option 1 | ) ) ) ) ) ).
+                       %param = VALUE #( zrfmbvideo = VALUE #( description = VALUE #( ( score = 1 suggested = abap_true value = |Option 1| ) ) ) ) ) ).
 
 
   ENDMETHOD.
